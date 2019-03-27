@@ -1,11 +1,10 @@
 --- #环境分割线
-spring:
-  profiles: prod
 server:
   port: 8000
   servlet:
     context-path: /
 spring:
+  profiles: prod
   datasource:
     #引入druid数据源
     type: com.alibaba.druid.pool.DruidDataSource
@@ -35,13 +34,12 @@ mybatis-plus:
     
     
 --- #环境分割线
-spring:
-  profiles: test
 server:
   port: 8005
   servlet:
     context-path: /
 spring:
+  profiles: test
   datasource:
     #引入druid数据源
     type: com.alibaba.druid.pool.DruidDataSource
